@@ -1,0 +1,190 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    
+    --social-media: #89d2f4;
+    --event-organising: #6c58c7;
+    --creative-design: #4ac2f7;
+    --fund-raising: #ffc307;
+    --it: #1f5c75;
+    --photography: #1a2d39;
+    --structural: #ff7485;
+    --aerodynamics: #62a8e9;
+    --manufacturing: #fac400;
+    --electrical-design: #05aaf4;
+
+
+
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+body {
+    background-color: var(--veryLightGray);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.card-box h1:first-of-type {
+    font-weight: var(--weight1);
+    color: var(--varyDarkBlue);
+
+}
+.card-box img {
+    width: 64px;
+}
+
+.card-box h1:last-of-type {
+    color: var(--varyDarkBlue);
+}
+.card-box .team-category {
+    color:#003366;
+    font-weight: 700;
+    border-radius: 2px;
+    padding:0.1rem;
+    border: 2px solid #003366;
+    font-size: 0.9rem;
+    width: fit-content;
+}
+.card-box .view-more {
+    text-decoration: none;
+}
+.card-box:hover {
+    box-shadow: 0px 40px 40px 0px var(--grayishBlue);
+}
+@media (max-width: 400px) {
+    .card-box h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* .header {
+    text-align: center;
+    line-height: 0.8;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.header p {
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--grayishBlue);
+} */
+
+
+.card-box p {
+    color: var(--grayishBlue);
+}
+
+.card-box {
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;  
+}
+
+.card-box img {
+    float: right;
+}
+
+@media (max-width: 450px) {
+    .card-box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .card-box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+/* .cyan {
+    border-top: 3px solid var(--cyan);
+}
+.red {
+    border-top: 3px solid var(--red);
+}
+.blue {
+    border-top: 3px solid var(--blue);
+}
+.orange {
+    border-top: 3px solid var(--orange);
+} */
+.card-box.photography {
+    border-top: 3px solid var(--photography);
+}
+.card-box.social-media {
+    border-top: 3px solid var(--social-media);
+}
+.card-box.event-organising {
+    border-top: 3px solid var(--event-organising);
+}
+.card-box.it {
+    border-top: 3px solid var(--it);
+}
+.card-box.creative-design {
+    border-top: 3px solid var(--creative-design);
+}
+.card-box.fund-raising {
+    border-top: 3px solid var(--fund-raising);
+}
+.card-box.aerodynamics {
+    border-top: 3px solid var(--aerodynamics);
+}
+.card-box.structural {
+    border-top: 3px solid var(--structural);
+}
+.card-box.electrical-design {
+    border-top: 3px solid var(--electrical-design);
+}
+.card-box.manufacturing {
+    border-top: 3px solid var(--manufacturing);
+}
+
+.card-box h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+    .box-up {
+        position: relative;
+        bottom: 150px;
+    }
+    .card-box {
+        width: 22%;
+    }
+    .header p {
+        width: 30%;
+    }
+    
+}

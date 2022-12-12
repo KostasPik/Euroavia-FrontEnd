@@ -1,0 +1,58 @@
+.search {
+    width: 80%;
+    max-width: 350px;
+    margin-top:20px;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #003366;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #000;
+    font-family:'Ubuntu', sans-serif;
+  }
+  
+  .searchTerm:focus{
+    color: #003366;
+  }
+  
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #003366;
+    background: #003366;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search input.searchTerm::-webkit-input-placeholder {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-size: 1.125rem; */
+  font-weight: 700;
+}
+
+.search input.searchTerm:-ms-input-placeholder {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-size: 1.125rem; */
+  font-weight: 700;}
+
+.search input.searchTerm:-moz-placeholder {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-size: 1.125rem; */
+  font-weight: 700;
+}
+
+.search input.searchTerm::-moz-placeholder {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-size: 1.125rem; */
+  font-weight: 700;
+}

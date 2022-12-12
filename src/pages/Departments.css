@@ -1,0 +1,100 @@
+.departments-container {
+    padding: 10rem 0rem 2rem 0;
+    margin: 0 auto;
+    /* width: 80%; */
+    font-weight: 500;
+}
+.departments-container  {
+    /* width: 100%; */
+    /* margin-top: 5rem; */
+    font-size: 130%;
+    /* margin: 5rem auto 2rem auto; */
+}
+.departments-container  .department-category {
+    padding: 0.2rem 0.5rem;
+    color: #003366;
+    border:3px solid #003366;
+    width: fit-content;
+    margin-left: 5rem;
+    /* margin-top:10rem; */
+}
+.departments-container  .department-category h1 {
+    padding:0;
+    margin: 0;
+}
+.departments-container  .department {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+    width: 100%;
+    align-items: center;
+}
+.departments-container  .department.reversed {
+    flex-direction: row-reverse;
+}
+.departments-container  .department .department-title {
+    position: relative;
+    width: fit-content;
+    font-weight: 700;
+}
+.departments-container  .department .department-title:after {
+    content: "";
+    width: 60%;
+    position: absolute;
+    bottom:-10px;
+    left: 0;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #003366;
+}
+.departments-container  .department img {
+    width: 200px;
+}
+.departments-container  .department .department-details {
+    width: 60%;
+}
+@media screen and (max-width:1120px) {
+    .departments-container  .department-category {
+        margin-left: 0.5rem;
+    }
+}
+@media screen and (max-width:1020px) {
+    .departments-container  .department img {
+        width: 220px;
+    } 
+}
+
+
+@media screen and (max-width:920px) {
+    .departments-container  .department img {
+        width: 170px;
+        height: auto;
+    } 
+}
+
+@media screen and (max-width:720px) {
+
+    .departments-container  {
+        font-size: 115%;
+    }
+    .departments-container  .department  {
+        flex-direction: column-reverse!important;
+        margin-bottom: 3rem;
+
+    } 
+    .departments-container  .department .department-details {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    .departments-container  {
+        font-size: 100%;
+    }
+    .departments-container  .department .department-details {
+        width: 95%;
+    }
+}

@@ -1,0 +1,123 @@
+.footer {
+    width: 100%;
+    background-color: #003366;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 0;
+    font-size: 90%;
+
+}
+.footer .col:first-child {
+    margin-left: 2rem;
+}
+.footer .col {
+    margin-right: 2rem;
+}
+.footer .col h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.footer .col ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+
+}
+.footer .col ul li {
+    padding: 0.2rem 0;
+    /* display: inline-block; */
+    position: relative;
+    width: fit-content;
+}
+
+.footer .col ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+  }
+
+  .footer .col ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+.footer .col.col2.marketing ul {
+    column-count: 2;
+}
+
+
+.footer .col.col3 {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.footer .col.col3 .ntua img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #fff;
+}
+.footer .col.col3 .ntua {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.footer .col.col3 .ntua .ntua-caption{
+   width: 70%;
+    
+}
+.footer .col.col3 .ntua h4 {
+    margin:0;
+    font-size: 1rem;
+
+    padding:0;
+}
+.footer .col.col3 .ntua .ntua-caption .subtitle {
+    font-size: 0.8rem;
+    margin-top:0.5rem;
+}
+.footer .col.col3 .social {
+    display: flex;
+    flex-direction: row;
+}
+.footer .col.col3 .social img {
+    width: 25px;
+    height: auto;
+    align-items: center;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:725px) {
+    .footer {
+        justify-content: center;
+    }
+    .footer .col:first-child {
+        margin-left: 0rem;
+    }
+    .footer .col.col3 {
+       justify-content: center;
+       margin: 2rem auto 0 auto;
+    }
+    .footer .col.col3 .ntua {
+
+        justify-content: center;
+    }
+    .footer .col.col3 .social {
+
+        justify-content: center;
+    }
+}
