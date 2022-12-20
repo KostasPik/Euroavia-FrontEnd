@@ -57,31 +57,7 @@ export default function News() {
             <h1>{announcements[lang].header}</h1>
         </div>
 
-        <div className='news-subtitle'>
-          <div className='title'>
-            <img src={EventsImage} alt=''/>
-            <h3>{announcements[lang].caption}</h3>
-          </div>
-          <div className='seperator'>
-            <hr/>
-          </div>
-        </div>
-      {/* <img src={Airplane}/> */}
-        
-        <div className='news-filters'>
-            
-                <SearchBar />
 
-            {/* <div className='sortby'>
-              <select name="sort" id="sort" onChange={(e) => null}>
-            
-                  {[1,2,3].map(option => {
-                      return <option key={1 + Math.random()} value={"Hello World"}>Hello World</option>
-                  })}
-              </select>
-            </div> */}
-
-        </div>
 
 <div className='news-cards'>
 

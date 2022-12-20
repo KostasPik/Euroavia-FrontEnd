@@ -44,7 +44,7 @@ const Navbarmenu = () => {
 
 
     return (
-    <header className="header__middle">
+    <nav className="header__middle">
 
                 {/* Add Logo  */}
                 <div className="header__middle__logo">
@@ -96,7 +96,7 @@ const Navbarmenu = () => {
 
                     </nav>     
                 </div>
-    </header>
+    </nav>
     )
 }
 

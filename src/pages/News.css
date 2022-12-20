@@ -1,5 +1,5 @@
 .news {
-    padding: 10rem 6rem;
+    padding: 7rem 6rem 0rem 6rem;
 }
 .cool-title h1 {
     padding:0;
@@ -30,27 +30,6 @@
     border-top-left-radius: 8px;
     /* border-radius: 8px; */
 }
-.news-subtitle {
-    margin-top: 3rem;
-    width: 100%;
-}
-.news-subtitle .title {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-.news-subtitle hr {
-    margin:0 10px;
-    padding:0;
-    width: 30%;
-}
-.news-subtitle h3 {
-    margin:0;
-    padding:0;
-}
-.news-subtitle img {
-    width:80px;
-}
 
 .news-cards {
     display: flex;
@@ -60,20 +39,9 @@
     column-gap: 3rem;
     row-gap: 3rem;
     flex-wrap: wrap;
-    padding: 2rem 5rem;
+    padding: 5rem 5rem;
 }
 
-.news .news-filters {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-bottom: 2rem;
-}
-
-.sortby select{
-    padding: 5px;
-}
 
 @media screen and (max-width:1620px) {
     .news-card {
@@ -83,7 +51,7 @@
 
 @media screen and (max-width:1490px) {
     .news-cards {
-        padding:2rem;
+        padding:5rem 2rem;
     }
     .news-card {
         width: 25%;
@@ -92,7 +60,7 @@
 
 @media screen and (max-width:1300px) {
     .news-cards {
-        padding: 0!important;
+        padding: 5rem 0rem!important;
     }
     .news-card {
         width: 30%;
@@ -104,7 +72,7 @@
          padding: 8rem 2rem;
     }
     .news-cards {
-        padding: 0!important;
+        padding: 5rem 0!important;
         justify-content: space-evenly;
         width: 100%;
     }

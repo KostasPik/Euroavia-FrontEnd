@@ -8,6 +8,9 @@
 }
 .metrics-card {
     padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .metrics-card .metrics-card-header {
     display: flex;

@@ -47,7 +47,6 @@ export default function Event() {
             <div className='event-body' dangerouslySetInnerHTML={{__html: unEscapeHTML(lang==='el' ? event?.greek_body : event?.english_body)}}></div>
 
         </div>
-
     </div>
   )
 }

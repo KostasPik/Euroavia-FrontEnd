@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Universities from '../images/universities.svg'
 import ActiveMembers from '../images/active-members.svg'
+import Students from '../images/student.svg'
 import CountUp from 'react-countup';
 
 import './Metrics.css'
@@ -31,8 +32,8 @@ export default function Metrics() {
         </div>
         <div class="metrics-card">
             <div class="metrics-card-header">
-                <img src={Universities} />
-                <strong class="number universities"><CountUp end={20} />+</strong>
+                <img src={Students} />
+                <strong class="number universities"><CountUp end={40} />+</strong>
             </div>
             <p>NTUA Members</p>
         </div>

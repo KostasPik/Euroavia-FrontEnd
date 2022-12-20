@@ -28,13 +28,15 @@ li {
 list-style-type: none;
 }
 .menu-item a {
-font-size: 20px;
+/* font-size: 20px; */
+font-size: 17px;
 font-weight: 700;
 line-height: 40px;
 position: relative;
 display: block;
 color: #545050;
-margin: 27px 17px;
+/* margin: 27px 17px; */
+margin:12px 17px;
 text-decoration: none;
 cursor: pointer;
 }
@@ -63,7 +65,9 @@ padding:0 2rem;
 background-color: #fff;
 }
 .navbar-logo {
-  width: 100px;
+  /* width: 100px; */
+  width: 75px; 
+  /* --------------------------------------------------------------------- */
 }
 .header__middle__menus {
 width: 100%;
@@ -73,7 +77,8 @@ background-color: #fff;
 padding:0 2rem;
 }
 .menu-item.menu__qqqitem a{
-margin: 27px 10px;
+/* margin: 27px 10px; */
+margin: 12px 10px;
 }
 .header__middle__search {
 width: 7%;
@@ -180,7 +185,8 @@ max-width: 207px;
   .main-nav ul.menuq2 {
   display: block!important;
   position: absolute;
-  top:83.16px;
+  /* top:83.16px; */
+  top:63px;
   left: 0;
   z-index: 10007;
   background-color: #fff;
@@ -190,7 +196,12 @@ max-width: 207px;
   padding-top: 57px;
   height: 100vh;
   }
-  .main-nav .menu-item a {margin: 10px 17px;text-align: center;color: #000000;}
+  .main-nav .menu-item a {
+    /* margin: 10px 17px; */
+    margin: 10px auto;
+    width: fit-content;
+    text-align: center;
+    color: #000000;}
   .main-nav  ul.main-menu {display: none}
   .main-nav .sub__menus__arrows:hover .sub__menus {margin: 0 auto;left: 0;right: 0;}
   .sub__menus__Active{display: block!important;margin: 0 auto;left: 0;right: 0;}
