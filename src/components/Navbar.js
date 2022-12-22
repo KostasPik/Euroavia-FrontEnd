@@ -83,11 +83,11 @@ const Navbarmenu = () => {
                             <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/company-visits`}>Company Visits</NavLink></li> */}
                         </ul>
                     </li>
-                    <li className='menu-item '>
+                    <li className='menu-item flag'>
                         {  lang === 'el' ? 
-                            <NavLink onClick={() => {toggleClass(); setLanguage('en');}} activeClassName='is-active'><img src={americanFlag} style={{width:17}} /></NavLink>
+                            <Link onClick={() => {toggleClass(); setLanguage('en');}}><img src={americanFlag} style={{width:17}} /></Link>
                             :
-                            <NavLink onClick={() => {toggleClass(); setLanguage('el');}} activeClassName='is-active'><img src={greekFlag} style={{width:17}} /></NavLink>
+                            <Link onClick={() => {toggleClass(); setLanguage('el');}}><img src={greekFlag} style={{width:17}} /></Link>
                         }
                     </li>
 

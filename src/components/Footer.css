@@ -27,13 +27,17 @@
 
 }
 .footer .col ul li {
-    padding: 0.2rem 0;
+    padding: 0.2rem 0!important;
+}
+.footer .col ul li a {
+    color: inherit!important;
+    text-decoration: none;
     /* display: inline-block; */
     position: relative;
     width: fit-content;
 }
 
-.footer .col ul li::after {
+/* .footer .col ul li::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -49,7 +53,7 @@
   .footer .col ul li:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+  } */
 
 
 .footer .col.col2.marketing ul {
@@ -68,7 +72,6 @@
     height: 70px;
     border-radius: 50%;
     margin-right: 5px;
-    background-color: #fff;
 }
 .footer .col.col3 .ntua {
     display: flex;

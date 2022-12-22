@@ -1,5 +1,5 @@
 .event-container {
-    padding: 10rem 6rem 2rem 6rem;
+    padding: 7rem 6rem 2rem 6rem;
 }
 .event-container .event-details {
     padding-top:2.5rem;
@@ -26,7 +26,7 @@
 
 @media screen and (max-width:790px) {
     .event-container {
-        padding: 10rem 3rem;
+        padding: 7rem 3rem 2rem 3rem;
     }
     .event-container .event-details {
         width: 95%;   
@@ -35,7 +35,7 @@
 
 @media screen and (max-width:790px) {
     .event-container {
-        padding: 10rem 1.5rem;
+        padding: 7rem 1.5rem 2rem 1.5rem;
     }
     .event-container .event-details {
         width: 98%;
@@ -45,7 +45,7 @@
 
 @media screen and (max-width:450px) {
     .event-container {
-        padding: 10rem 1rem;
+        padding: 7rem 1rem 2rem 1rem;
     }
     .event-container .event-details {
         width: 99%;

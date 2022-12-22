@@ -1,6 +1,7 @@
 import Rocket from '../images/rocket.svg'
 import FancyBorder from './FancyBorder';
-import Pyrforos from '../images/pyrforos.svg'
+import Pyrforos from '../images/pyrforos.png'
+import GreekFlag from '../images/greek-flag.svg'
 import './Hero.css'
 
 const Hero = () => {  
@@ -19,13 +20,17 @@ const Hero = () => {
         <div class="context">
             <div class="text">
                 <small class="welcome">Welcome to</small>
-                <h1 class='title'>EUROAVIA Athens</h1>
+                <h1 class='title'>EUROAVIA <span className='bg-letters'>Athens</span></h1>
                 <p class='quote'>"They build things... We build wings."</p>
     
-                <a href="#" className="join-us">Join Us<img src={Rocket} /></a>
+                {/* <a href="#" className="join-us">Join Us<img src={Rocket} /></a> */}
+
                 <div className='pyrforos-wrapper'>
                   <img src={Pyrforos} className='pyrforos' />
+
                   <h3>National Technical University of Athens</h3>
+
+                  <img src={GreekFlag} className='greek-flag' />
                 </div>
             </div> 
 

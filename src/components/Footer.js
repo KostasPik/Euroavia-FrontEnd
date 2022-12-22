@@ -1,5 +1,6 @@
-import React from 'react'
-import Pyrforos from '../images/pyrforos.svg'
+import React, {useContext} from 'react'
+import { Link } from 'react-router-dom'
+import Pyrforos from '../images/pyrforos.png'
 import Facebook from '../images/social/facebook.svg'
 import Instagram from '../images/social/instagram.svg'
 import Twitter from '../images/social/twitter.png'
@@ -7,20 +8,27 @@ import Youtube from '../images/social/youtube.svg'
 import Linkedin from '../images/social/linkedin.svg'
 import Email from '../images/social/email.svg'
 import './Footer.css'
-
+import FooterContent from '../content/Footer'
+import LangContext from '../context/LangContext'
 
 export default function Footer() {
+
+    const {lang} = useContext(LangContext);
   return (
     <div className='footer'>
 
         <div className='col col1'>
-            <h3>Useful Links</h3>
+            <h3>{lang === 'en' ? `Useful Links` : `Χρήσιμοι Σύνδεσμοι`}</h3>
             <ul>
-                <li>Home</li>
-                <li>News</li>
+
+                {FooterContent.usefulLinks[lang].map((usefulLink) => {
+                    return <li><Link to={usefulLink.dest}>{usefulLink.name}</Link></li>
+                })}
+                
+                {/* <li>News</li>
                 <li>Air Cargo Challenge</li>
                 <li>Symposium</li>
-                <li>Company Visits</li>
+                <li>Company Visits</li> */}
             </ul>
         </div>
         <div className='col col4'>
