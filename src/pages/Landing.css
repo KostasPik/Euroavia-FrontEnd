@@ -9,7 +9,7 @@ section.section {
     background-color: #003366;
     color:#fff;
     width: fit-content;
-    padding: 2px 5px;
+    padding: 2px 15px 2px 5px;
     border-radius: 2px;
     font-style: italic;
     position: relative;

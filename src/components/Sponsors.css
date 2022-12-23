@@ -1,57 +1,55 @@
-section.sponsors .swiper {
-    width: 95%;
-    height: 350px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
-    background: #fff;
-    margin-top:2rem;
-    border-radius: 8px;
-}
 
-
-section.sponsors .swiper-wrapper {
+.sponsors-wrapper {
+    width: 100%;
+    /* padding: 2rem 5rem; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between!important;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-
-
-section.sponsors  .swiper-slide {
-    text-align: center;
-    /* background: #fff; */
-    border-radius: 4px;
-    overflow: hidden;
-    z-index: 2;
-    color:#fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+.sponsor-card {
+    width: 300px;
+    height: 150px;
     display: flex;
-    /* -webkit-box-pack: center; */
-    /* -ms-flex-pack: center; */
-    /* -webkit-justify-content: center; */
-    /* justify-content: center; */
-    /* -webkit-box-align: center; */
-    /* -ms-flex-align: center; */
-    /* -webkit-align-items: center; */
-    /* align-items: center; */
-    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px; */
-}
-
-
-section.sponsors .swiper-slide {
-    display: block;
-    object-fit: cover;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin-top:2rem;
+    /* margin: 20px;   */
+}
+.sponsor-card img {
+    width:80%;
+    max-height: 150px;
+}
+.sponsor-card.hai {
+    border-top: 5px solid #1591cd;
+}
+.sponsor-card.beta {
+    border-top: 5px solid #0d62ad;
+}
+.sponsor-card.wurth {
+    border-top: 5px solid #c00;
+}
+.sponsor-card.pitsirikos {
+    border-top: 5px solid #ED262E;
+}
+.sponsor-card.pyrforos {
+    border-top: 5px solid #000;
+}
+.sponsor-card.efood {
+    border-top: 5px solid #ED2E2E;
+}
+.sponsor-card.bestrcshops {
+    border-top: 5px solid #396578;
+}
+.sponsor-card.hellenic-drones {
+    border-top: 5px solid #E40D0D;
 }
 
-section.sponsors .swiper-slide img {
-    width: 100%;
-    max-width: 300px;
-
+@media screen and (max-width:900px) {
+    .sponsor-card {
+        width: 250px;
+    }
 }

@@ -9,7 +9,6 @@ import { whoWeAre, goals } from "../content/Landing"
 import './Landing.css'
 import axiosInstance from "../api/api"
 import Sponsors from '../components/Sponsors';
-import Sponsors2 from '../components/Sponsors2';
 
 const Landing = () => {
 
@@ -45,7 +44,7 @@ const Landing = () => {
         </div>
     </section>
 
-    <Sponsors2 />
+    <Sponsors />
 
     </>
   )

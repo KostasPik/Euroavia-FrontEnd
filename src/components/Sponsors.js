@@ -1,76 +1,64 @@
-// import Swiper core and required modules
-import { useEffect, useState, useContext } from 'react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import LangContext from '../context/LangContext'
-import { activities  } from "../content/Landing"
+import React, { useContext } from 'react'
+import './Sponsors.css'
 
 import HaiImage from '../images/sponsors/HAI-colored.svg'
 import BetaImage from '../images/sponsors/beta-optimized.svg'
 import WurthImage from '../images/sponsors/wurth.svg'
+import PitsirikosImage from '../images/sponsors/pitsirikos.svg'
+import PyrforosImage from '../images/sponsors/pyrforos.svg'
+import EfoodImage from '../images/sponsors/efood.svg'
+import BestRcShopsImage from '../images/sponsors/best-rc-shops.svg'
+import HellenicDronesImage from '../images/sponsors/hellenic-drones.svg'
+import LangContext from '../context/LangContext'
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import './Sponsors.css'
 
+export default function Sponsors2() {
 
-export default function CardSection() {
-
-  const [slidesPerView, setSlidesPerView] = useState(null);
-
-  const {lang} = useContext(LangContext);
-
-  useEffect( () => {
-   
-    let width = window.innerWidth;
-    var tempSlidesPerView = 4;
-    if (width < 1400) tempSlidesPerView = 3;
-    if (width < 1200) tempSlidesPerView = 2;
-    if (width < 600) tempSlidesPerView = 1;
-   setSlidesPerView(tempSlidesPerView);
-
-  }, [])
-
+    const {lang} = useContext(LangContext);
   return (
-    <section class="section sponsors">
-    <h3 class="title">Sponsors</h3>
-    <div class="text">
-       We deeply thank all of our sponsors for continuously supporting our team!
-       
-       
-    <Swiper
-    modules={[Pagination, Autoplay]}
-    spaceBetween={30}
-    slidesPerView={slidesPerView}
-    pagination={{ clickable: true }}
-    // scrollbar={{ draggable: true }}
-    // onSwiper={(swiper) => console.log(swiper)}
-    // onSlideChange={() => console.log('slide change')}
-    >
-     <SwiperSlide>
-        <div class="swiper-slide">
-              <img src={HaiImage} alt='Hellenic Aerospace Industry Logo' loading='lazy' />
-            </div>
-        </SwiperSlide>
+    <section class='section sponsors'>
+        <h3 class='title'>{lang === 'en'? "Sponsors" : "Χορηγοί"}</h3>
+        <div class="text">
+            <p>{lang==='en'?"We deeply thank all of our sponsors for continuously supporting our team!" : "Ευχαριστούμε βαθύτατα όλους τους χορηγούς μας που μας στηρίζουν αδιάκοπα!"}</p>
+            <div className='sponsors-wrapper'>
+                <div className='sponsor-card hai'>
+                    <img src={HaiImage} loading='lazy'/>
+                </div>
+                <div className='sponsor-card wurth'>
+                    <img src={WurthImage} loading='lazy'/>
 
-        <SwiperSlide>
-        <div class="swiper-slide">
-              <img src={BetaImage} alt='Beta Logo' loading='lazy' />
-            </div>
-        </SwiperSlide>
 
-        <SwiperSlide>
-        <div class="swiper-slide">
-              <img src={WurthImage} alt='Wurth Logo' loading='lazy' />
+                </div>
+                <div className='sponsor-card beta'>
+                    <img src={BetaImage} loading='lazy' />
+
+                </div>
+
+                <div className='sponsor-card pitsirikos'>
+                    <img src={PitsirikosImage} loading='lazy'/>
+                </div>
+
+                <div className='sponsor-card pyrforos'>
+                    <img src={PyrforosImage} loading='lazy'/>
+                </div>
+
+                <div className='sponsor-card efood'>
+                    <img src={EfoodImage} loading='lazy'/>
+                </div>
+
+                <div className='sponsor-card bestrcshops'>
+                    <img src={BestRcShopsImage} loading='lazy'/>
+                </div>
+
+                <div className='sponsor-card hellenic-drones'>
+                    <img src={HellenicDronesImage} loading='lazy'/>
+                </div>
+
+
+
             </div>
-        </SwiperSlide>
-     
-    </Swiper>
-    </div>
-</section>
+       
+       </div>
+    </section>
   )
 }
