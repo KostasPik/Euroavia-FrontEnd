@@ -8,6 +8,9 @@ import LangContext from '../context/LangContext'
 import { whoWeAre, goals } from "../content/Landing"
 import './Landing.css'
 import axiosInstance from "../api/api"
+import Sponsors from '../components/Sponsors';
+import Sponsors2 from '../components/Sponsors2';
+
 const Landing = () => {
 
   const {lang} = useContext(LangContext);
@@ -41,6 +44,9 @@ const Landing = () => {
         <div class="text" dangerouslySetInnerHTML={{__html: goals[lang].body}}>
         </div>
     </section>
+
+    <Sponsors2 />
+
     </>
   )
 }

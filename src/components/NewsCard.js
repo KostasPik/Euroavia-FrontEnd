@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import LangContext from '../context/LangContext'
-import CalendarImage from '../images/calendar.svg'
+import CalendarImage from '../images/calendar-optimized.webp'
 import './NewsCard.css'
 
 export default function NewsCard({title, slug, excerpt, imageURI, date}) {

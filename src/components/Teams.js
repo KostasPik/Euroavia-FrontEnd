@@ -67,7 +67,7 @@ export default function Departments() {
                 </div>
             
                 <div class="card-box red structural">
-                  <h2>Structural</h2>
+                  <h2>Structural Analysis</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris quam.</p>
                   <img src={StructuralImage} alt='Structural Department' loading='lazy'/>
                   {/* <a href="#" class="view-more">Περισσότερα</a> */}

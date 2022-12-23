@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import axiosInstance from '../api/api'
 import './New.css'
 import Preloader from '../components/Preloader'
-import CalendarImage from '../images/calendar.svg'
+import CalendarImage from '../images/calendar-optimized.webp'
 import LangContext from '../context/LangContext'
 
 export default function New() {

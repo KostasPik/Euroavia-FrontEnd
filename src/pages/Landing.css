@@ -43,10 +43,15 @@ section.section {
   section.section.departments .title::before {
     background-image: url(../images/landing-departments.svg);
   }
+  section.section.sponsors .title::before {
+    background-image: url(../images/sponsors-optimized.webp);
+    width: 150px;
+  }
   section.section .text {
     font-size: 1.125rem;
     line-height: 1.7rem;
     padding: 0 1.5rem;
+    text-align: justify;
   }
   section.section.dark {
     background-color: #003366;

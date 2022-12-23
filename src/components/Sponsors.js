@@ -1,18 +1,21 @@
 // import Swiper core and required modules
 import { useEffect, useState, useContext } from 'react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import BackgroundImage from '../images/fancyborder-optimized.webp'
 import LangContext from '../context/LangContext'
 import { activities  } from "../content/Landing"
+
+import HaiImage from '../images/sponsors/HAI-colored.svg'
+import BetaImage from '../images/sponsors/beta-optimized.svg'
+import WurthImage from '../images/sponsors/wurth.svg'
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import './CardSection.css'
+import './Sponsors.css'
 
 
 export default function CardSection() {
@@ -33,30 +36,38 @@ export default function CardSection() {
   }, [])
 
   return (
-    <section class="section dark activities">
-    <h3 class="title">{activities[lang].header}</h3>
+    <section class="section sponsors">
+    <h3 class="title">Sponsors</h3>
     <div class="text">
-       <p>{activities[lang].caption}</p>
+       We deeply thank all of our sponsors for continuously supporting our team!
        
        
     <Swiper
-    modules={[Pagination, Navigation]}
+    modules={[Pagination, Autoplay]}
     spaceBetween={30}
     slidesPerView={slidesPerView}
-    navigation
     pagination={{ clickable: true }}
     // scrollbar={{ draggable: true }}
     // onSwiper={(swiper) => console.log(swiper)}
     // onSlideChange={() => console.log('slide change')}
     >
-     {activities[lang].body.map((activity, index) => {
-        return  <SwiperSlide key={index}>
+     <SwiperSlide>
         <div class="swiper-slide">
-              <img src={BackgroundImage} alt='Euroavia Athens activity' loading='lazy' />
-              <p class='swiper-text'>{activity.caption}</p>
+              <img src={HaiImage} alt='Hellenic Aerospace Industry Logo' loading='lazy' />
             </div>
         </SwiperSlide>
-     })}
+
+        <SwiperSlide>
+        <div class="swiper-slide">
+              <img src={BetaImage} alt='Beta Logo' loading='lazy' />
+            </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div class="swiper-slide">
+              <img src={WurthImage} alt='Wurth Logo' loading='lazy' />
+            </div>
+        </SwiperSlide>
      
     </Swiper>
     </div>

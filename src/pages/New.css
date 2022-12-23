@@ -40,6 +40,8 @@
 .new-content .body {
     font-size: 1.125rem;
     line-height: 1.4rem;
+    text-align: justify;
+
 }
 .new-content .body li {
     list-style-type:disc!important;
