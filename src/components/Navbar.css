@@ -115,10 +115,11 @@ color: #ff1800;
 .sub__menus__arrows{
 position: relative;
 }
-.sub__menus__arrows svg, .sub__menus__arrows__full svg{
+.sub__menus__arrows img, .sub__menus__arrows__full img{
 padding-top: 0px;
 position: absolute;
 top: 13px;
+right: -20px;
 }
 .sub__menus {
 position: absolute;
@@ -169,7 +170,10 @@ max-width: 207px;
   .main-nav .menubar__button:hover {background-color: #003366;}
   .main-nav .menu-item:hover > a {color: #003366 !important}
   .main-nav .menubar__button {
-  display: block!important;
+  /* display: block!important; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   float: right;
   background-color: #080808;
   color: #fff;

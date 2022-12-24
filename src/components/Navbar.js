@@ -7,6 +7,9 @@ import americanFlag from '../images/american-flag.svg'
 import {EVENTS} from '../content/Event'
 import './Navbar.css';
 import { Helmet } from 'react-helmet-async';
+import ChevronUp from '../images/navbar/chevron-up-solid.svg'
+import AlignJustify from '../images/navbar/align-justify-solid.svg'
+import ChevronDown from '../images/navbar/chevron-down-solid.svg'
 
 const Navbarmenu = () => {
 
@@ -75,9 +78,16 @@ const Navbarmenu = () => {
 
                     {/* Responsive Menu Button */}
                     {isResponsiveclose === true ? <> 
-                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <i class="fa-solid fa-chevron-up"></i>   </span>
+                        <span className="menubar__button"  onClick={toggleClass} > 
+                        {/* <i class="fa-solid fa-chevron-up"></i>    */}
+                        <img src={ChevronUp} width="16" height="14" alt='Chevron Up'/>
+                        </span>
                     </> : <> 
-                        <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <i class="fa fa-align-justify" aria-hidden="true"></i>   </span>
+                        <span className="menubar__button"  onClick={toggleClass} > 
+                        {/* <i class="fa fa-align-justify" aria-hidden="true"></i>    */}
+                        <img src={AlignJustify} width="16" height="16" alt='Align Justify' />
+
+                        </span>
                     </>}
 
 
@@ -88,7 +98,10 @@ const Navbarmenu = () => {
                     </li>
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/teams`}>{lang == 'el'? 'Ομάδες' : 'Teams'}</NavLink> </li>
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/news`}>{lang == 'el'? 'Ανακοινώσεις' : 'Announcements'}</NavLink> </li>
-                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#">{lang == 'el'? 'Δραστηριότητες' : 'Projects'}    <i class="fa-solid fa-chevron-down"></i> </Link>
+                    <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#">{lang == 'el'? 'Δραστηριότητες' : 'Projects'}    
+                    {/* <i class="fa-solid fa-chevron-down"></i>  */}
+                        <img src={ChevronDown} alt='Chevron Down' width="16" height="16"/>
+                    </Link>
                         <ul className={boxClassSubMenu.join(' ')} >
                             {EVENTS.map((event) => {
                                 // return <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`event/${event[lang]}/`}>{event.name}</NavLink></li>
