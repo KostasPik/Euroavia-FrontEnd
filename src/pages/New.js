@@ -5,7 +5,7 @@ import './New.css'
 import Preloader from '../components/Preloader'
 import CalendarImage from '../images/calendar-optimized.webp'
 import LangContext from '../context/LangContext'
-
+import { Helmet } from 'react-helmet-async'
 export default function New() {
 
     const {postSlug} = useParams();
@@ -37,9 +37,26 @@ export default function New() {
     if (loading) return <Preloader />
 
   return (
+    <>
+        <Helmet>
+      
+
+            <meta property="description" content="hello" data-rh="true"/>
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content={`${lang === 'el' ? post?.greek_title : post?.english_title} - EUROAVIA Athens`} data-rh="true"/>
+            <meta property="og:description" data-rh="true" content="hello" />
+            <meta property="og:image" content={`https://euroaviaathens.eu.pythonanywhere.com${post?.thumbnail}`} data-rh="true"/>
+            <meta property="og:site_name" content="EUROAVIA Athens" data-rh="true"/>
+            <meta property="og:image:alt" content="Euroavia Photo"data-rh="true" />
+            <meta name="twitter:card" content="summary_large_image" data-rh="true"/>
+            <meta name="twitter:site" content="EUROAVIA Athens" data-rh="true"/>
+            <meta name="twitter:title" content={`${lang === 'el' ? post?.greek_title : post?.english_title} - EUROAVIA Athens`} data-rh="true"/>
+            <meta name="twitter:image" content={`https://euroaviaathens.eu.pythonanywhere.com${post?.thumbnail}`} data-rh="true"/>
+            <title>{lang === 'el' ? post?.greek_title : post?.english_title} - EUROAVIA Athens</title>
+      </Helmet>
     <div className='new'>
         <div className='new-container'>
-            <img src={`https://euroaviaathens.eu.pythonanywhere.com${post?.thumbnail}`} className='new-image' alt={post?.greek_title} />
+            <div style={{backgroundImage:`url(https://euroaviaathens.eu.pythonanywhere.com${post?.thumbnail})`}} className='new-image' alt={post?.greek_title} ></div>
             <div className='new-content'>
                 <h1 className='title'>{lang === 'el' ? post?.greek_title : post?.english_title}</h1>
                 <small className='date'><img src={CalendarImage} alt='calendar' />{new Date(post?.created_at).toLocaleDateString(lang === 'el'?'el-GR':'en', { year: 'numeric', month: 'numeric', day: 'numeric' })}</small>
@@ -47,5 +64,6 @@ export default function New() {
             </div>
         </div>
     </div>
+    </>
   )
 }

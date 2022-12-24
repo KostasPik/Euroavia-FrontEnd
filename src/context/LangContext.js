@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import { useSearchParams  } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async";
 const LangContext = createContext({})
 
 export const LangProvider = ({ children }) => {
@@ -11,8 +11,11 @@ export const LangProvider = ({ children }) => {
     
 
 
+
+
     useEffect( () => {
         setSearchParams({lang: language})
+        // document.documentElement.lang = language;
     }, [language])
 
 

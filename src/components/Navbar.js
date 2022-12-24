@@ -6,7 +6,7 @@ import greekFlag from '../images/greek-flag.svg'
 import americanFlag from '../images/american-flag.svg'
 import {EVENTS} from '../content/Event'
 import './Navbar.css';
-
+import { Helmet } from 'react-helmet-async';
 
 const Navbarmenu = () => {
 
@@ -44,6 +44,23 @@ const Navbarmenu = () => {
 
 
     return (
+        <>
+        <Helmet>
+            <html lang={lang}/>  
+            {lang === 'el' && <>
+            <meta property="og:locale" content="el_GR" data-rh="true"/>
+            <meta property="og:locale:alternate" content="en_US" data-rh="true"/>         
+            </>}
+
+            {lang === 'en' && <>
+            <meta property="og:locale" content="en_US" data-rh="true"/>
+            <meta property="og:locale:alternate" content="el_GR" data-rh="true"/>         
+            </>}
+            
+        </Helmet>
+
+
+
     <nav className="header__middle">
 
                 {/* Add Logo  */}
@@ -97,6 +114,7 @@ const Navbarmenu = () => {
                     </nav>     
                 </div>
     </nav>
+    </>
     )
 }
 

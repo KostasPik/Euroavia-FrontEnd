@@ -7,31 +7,30 @@ import News from './pages/News';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import New from './pages/New';
-import { LangProvider } from './context/LangContext';
+import LangContext, { LangProvider } from './context/LangContext';
 import Event from './pages/Event';
-
+import { useContext } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 function App() {
-  
   return (
     <div className="App">
-      <Router>
-  
-        <LangProvider>
+        <Router>
+          <LangProvider>
 
-            <Navbar />
+              <Navbar />
 
-            <Routes>
-              <Route path='/' exact element={<Landing />} />
-              <Route path='/teams/' exact element={<Departments />} />
-              <Route path='/news/' exact element={<News />}/>
-              <Route path='/new/:postSlug/' exact element={<New />}/>
-              <Route path='/event/:postSlug/' exact element={<Event />} />
-            </Routes>
+              <Routes>
+                <Route path='/' exact element={<Landing />} />
+                <Route path='/teams/' exact element={<Departments />} />
+                <Route path='/news/' exact element={<News />}/>
+                <Route path='/new/:postSlug/' exact element={<New />}/>
+                <Route path='/event/:postSlug/' exact element={<Event />} />
+              </Routes>
 
-            <Footer />
-        </LangProvider>
-      </Router>
+              <Footer />
+          </LangProvider>
+        </Router>
     </div>
   );
 

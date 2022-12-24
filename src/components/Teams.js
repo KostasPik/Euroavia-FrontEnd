@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import SocialMediaImage from '../images/department_icons/social-media-optimized.webp'
 import CreativeDesignImage from '../images/department_icons/creative-design-optimized.webp'
@@ -11,7 +11,10 @@ import FundRaisingImage from '../images/department_icons/fund-raising-optimized.
 import ManufacturingImage from '../images/department_icons/manufacturing-optimized.webp'
 import ItImage from '../images/department_icons/it-optimized.webp'
 import './Teams.css'
+import LangContext from '../context/LangContext'
 export default function Departments() {
+
+  const {lang} = useContext(LangContext);
   return (
     <section class="section departments">
         <h3 class="title">Teams</h3>
@@ -86,7 +89,7 @@ export default function Departments() {
               <div class="row1-container">
                 <div class="card-box box-up cyan electrical-design">
                   <h2>Electrical Design</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris quam.</p>
+                  <p>{lang==='el'?"Σχεδίαση και ανάπτυξη των ηλεκτρονικών συστημάτων με τα οποία είναι εφοδιασμένο το αεροσκάφος.":"Design and development of all the electronic systems that the aircraft is equipped with."}</p>
                   <img src={ElectricalDesignImage} alt='Electrical Design Department' loading='lazy'/>
                   <p class='team-category'>Technical Team</p>
                 </div>
