@@ -33,7 +33,7 @@ section.activities .swiper-text {
     text-align: left;
     padding: 1rem 1rem 0rem 1rem;
     line-height: 1.3rem;
-    text-align: justify;
+    /* text-align: justify; */
 
 }
 section.activities .swiper-slide img {

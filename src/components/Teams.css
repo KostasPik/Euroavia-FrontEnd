@@ -53,7 +53,8 @@ body {
     font-weight: 700;
     border-radius: 2px;
     padding:0.1rem;
-    border: 2px solid #003366;
+    /* border: 2px solid #003366; */
+    /* font-size: 0.9rem; */
     font-size: 0.9rem;
     width: fit-content;
 }

@@ -23,7 +23,7 @@ const Hero = () => {
                 <h1 class='title'>EUROAVIA <span className='bg-letters'>Athens</span></h1>
                 <p class='quote'>"They build things... We build wings."</p>
     
-                {/* <a href="#" className="join-us">Join Us<img src={Rocket} /></a> */}
+                <a href="#" className="join-us">Join Us<img src={Rocket} /></a>
 
                 <div className='pyrforos-wrapper'>
                   <img src={Pyrforos} className='pyrforos' />

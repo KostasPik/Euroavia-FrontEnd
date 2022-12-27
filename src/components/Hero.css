@@ -130,6 +130,7 @@
 /* .hero .context .text h1 span.bg-letters {
     background:url(../images/greek-flag.svg);
     background-size: contain;
+    background-position: 0% 20%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 

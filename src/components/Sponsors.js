@@ -9,6 +9,8 @@ import PyrforosImage from '../images/sponsors/pyrforos.svg'
 import EfoodImage from '../images/sponsors/efood.svg'
 import BestRcShopsImage from '../images/sponsors/best-rc-shops.svg'
 import HellenicDronesImage from '../images/sponsors/hellenic-drones.svg'
+import BbAccountingImage from '../images/sponsors/bbaccounting.svg'
+
 import LangContext from '../context/LangContext'
 
 
@@ -54,6 +56,9 @@ export default function Sponsors2() {
                     <img src={HellenicDronesImage} loading='lazy'/>
                 </div>
 
+                <div className='sponsor-card bb-accounting'>
+                    <img src={BbAccountingImage} loading='lazy'/>
+                </div>
 
 
             </div>

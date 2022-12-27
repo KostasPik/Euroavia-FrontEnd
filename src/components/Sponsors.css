@@ -47,6 +47,9 @@
 .sponsor-card.hellenic-drones {
     border-top: 5px solid #E40D0D;
 }
+.sponsor-card.bb-accounting {
+    border-top: 5px solid #CAAE6E;
+}
 
 @media screen and (max-width:900px) {
     .sponsor-card {
