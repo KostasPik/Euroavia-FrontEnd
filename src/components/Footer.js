@@ -10,6 +10,7 @@ import Email from '../images/social/email.svg'
 import './Footer.css'
 import FooterContent from '../content/Footer'
 import LangContext from '../context/LangContext'
+import Newsletter from './Newsletter'
 
 export default function Footer() {
 
@@ -32,15 +33,16 @@ export default function Footer() {
             </ul>
         </div>
         <div className='col col4'>
-        <h3>Technical</h3>
+        {/* <h3>Technical</h3>
             <ul>
                 <li>Structural</li>
                 <li>Electrical Design</li>
                 <li>Manufacturing</li>
                 <li>Aerodynamics</li>
-            </ul>
+            </ul> */}
+            <Newsletter />
         </div>
-        <div className='col col2 marketing'>
+        {/* <div className='col col2 marketing'>
             <h3>Marketing</h3>
                 <ul>
                     <li>It & Website</li>
@@ -50,14 +52,15 @@ export default function Footer() {
                     <li>Fund Raising</li>
                     <li>Video / Photography</li>
                 </ul>            
-        </div>
+        </div> */}
 
         <div className='col col3'>
             <div className='ntua'>
                 <img src={Pyrforos} alt='Εθνικό Μετσόβιο Πολυτεχνείο' loading='lazy' />
                 <div className='ntua-caption'>
                     <h4>National Technical University of Athens</h4>
-                    <p class='subtitle'>Πολυτεχνειούπολη Ζωγράφου Ηρώων Πολυτεχνείου 9 15772 Ζωγράφου</p>
+                    <p class='subtitle'>{lang==='el' ? 'Πολυτεχνειούπολη Ζωγράφου Ηρώων Πολυτεχνείου 9 15772 Ζωγράφου' :
+                    'Polytechnioupoli Zografou Iroon Polytechniou 9 15772 Zografou'}</p>
                 </div>
             </div>
 

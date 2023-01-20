@@ -35,7 +35,7 @@ export default function Metrics() {
                 <img src={Students} />
                 <strong class="number universities"><CountUp end={40} />+</strong>
             </div>
-            <p>NTUA Members</p>
+            <p>N.T.U.A. Members</p>
         </div>
     </section>
   )

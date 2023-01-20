@@ -22,18 +22,24 @@ import './CardSection.css'
 
 export default function CardSection() {
 
-  const [slidesPerView, setSlidesPerView] = useState(null);
-
+  const [slidesPerView, setSlidesPerView] = useState(4);
   const {lang} = useContext(LangContext);
 
-  useEffect( () => {
-   
+  function handleResize () {
+
     let width = window.innerWidth;
     var tempSlidesPerView = 4;
     if (width < 1400) tempSlidesPerView = 3;
     if (width < 1200) tempSlidesPerView = 2;
     if (width < 600) tempSlidesPerView = 1;
    setSlidesPerView(tempSlidesPerView);
+  }
+
+  useEffect( () => {
+   handleResize();
+    
+    
+   window.addEventListener('resize', handleResize)
 
   }, [])
 
@@ -50,13 +56,16 @@ export default function CardSection() {
     slidesPerView={slidesPerView}
     navigation
     pagination={{ clickable: true }}
+    initialSlide={1}
+    loop={true}
+    loopedSlides={50}
     // scrollbar={{ draggable: true }}
     // onSwiper={(swiper) => console.log(swiper)}
     // onSlideChange={() => console.log('slide change')}
     >
     <SwiperSlide>
         <div class="swiper-slide">
-              <img src={HermesV} alt='Euroavia Athens activity' loading='lazy' />
+              <img src={HermesV} alt='Hermes V Drone' loading='lazy' />
               <p class='swiper-text'>
                 {lang ==='el' ? 
                 "Η κατασκευή και μελέτη ενός μη επανδρωμένου, τηλεκατευθυνόμενου αεροσκάφους με άνοιγμα φτερών περίπου 4.5m σύμφωνα με τις προδιαγραφές του Air Cargo Challenge.": 
@@ -69,7 +78,7 @@ export default function CardSection() {
 
         <SwiperSlide>
         <div class="swiper-slide">
-              <img src={CompanyVisits} alt='Euroavia Athens activity' loading='lazy' />
+              <img src={CompanyVisits} alt='Company Visits' loading='lazy' />
               <p class='swiper-text'>
                 {lang ==='el' ? 
                 "Η διοργάνωση ξεναγήσεων και εκπαιδευτικών εκδρομών σε εταιρίες και βιομηχανίες οι οποίες δραστηριοποιούνται στους τομείς της Αεροναυπηγικής και της Αεροδιαστημικής.": 
@@ -81,7 +90,7 @@ export default function CardSection() {
 
         <SwiperSlide>
         <div class="swiper-slide">
-              <img src={Symposium} alt='Euroavia Athens activity' loading='lazy' />
+              <img src={Symposium} alt='Satellites Symposium' loading='lazy' />
               <p class='swiper-text'>
                 {lang ==='el' ? 
                 "Η διοργάνωση διεθνών εκπαιδευτικών συμποσίων και συνεδρίων στα οποία δικαίωμα συμμετοχής έχουν όλα τα μέλη του ευρωπαϊκού συλλόγου EUROAVIA.": 
@@ -94,7 +103,7 @@ export default function CardSection() {
 
         <SwiperSlide>
         <div class="swiper-slide">
-              <img src={Acc} alt='Euroavia Athens activity' loading='lazy' />
+              <img src={Acc} alt='Air Cargo Challenge' loading='lazy' />
               <p class='swiper-text'>
                 {lang ==='el' ? 
                 "Η εκπροσώπηση του συλλόγου σε διεθνή εκπαιδευτικά συμπόσια και συνέδρια σκοπός των οποίων είναι η διασύνδεση μεταξύ των μελών της Euroavia και η γνωριμία με την ευρωπαϊκή αεροδιαστημική βιομηχανία.": 
@@ -106,7 +115,7 @@ export default function CardSection() {
 
         <SwiperSlide>
         <div class="swiper-slide">
-              <img src={Ekdiloseis} alt='Euroavia Athens activity' loading='lazy' />
+              <img src={Ekdiloseis} alt='EUROAVIA Athens Events' loading='lazy' />
               <p class='swiper-text'>
                 {lang ==='el' ? 
                 "Η συμμετοχή σε εκδηλώσεις επιστημονικού ενδιαφέροντος για την ενημέρωση του κοινού για τις δραστηριότητες του συλλόγου.": 

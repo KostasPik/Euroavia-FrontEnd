@@ -22,7 +22,7 @@ export default function NewsCard({title, slug, excerpt, imageURI, date}) {
               <small className='date'><img src={CalendarImage} alt='calendar' />{new Date(date).toLocaleDateString(lang === 'el'?'el-GR':'en', { year: 'numeric', month: 'numeric', day: 'numeric' })}</small>
             </div>
           <div className='view-more'>
-            <Link to={`/new/${slug}/`}>Περισσότερα</Link>
+            <Link to={`/news/${slug}?lang=${lang}`}>Περισσότερα</Link>
           </div>
         </div>
     </div>

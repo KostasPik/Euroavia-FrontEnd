@@ -3,9 +3,21 @@ import FancyBorder from './FancyBorder';
 import Pyrforos from '../images/pyrforos.png'
 import GreekFlag from '../images/greek-flag.svg'
 import './Hero.css'
+import { useEffect, useState } from 'react';
 
 const Hero = () => {  
     
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
+
+useEffect( () => {
+  function handleResize() {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  }
+  window.addEventListener('resize', handleResize)
+
+}, [])
 
   return (
     <div class="hero">
@@ -23,7 +35,7 @@ const Hero = () => {
                 <h1 class='title'>EUROAVIA <span className='bg-letters'>Athens</span></h1>
                 <p class='quote'>"They build things... We build wings."</p>
     
-                <a href="#" className="join-us">Join Us<img src={Rocket} /></a>
+                <a href="https://forms.gle/t1SnCWLEA2WnaPyt6" target="_blank" className="join-us">Join Us<img src={Rocket} alt='rocket' /></a>
 
                 <div className='pyrforos-wrapper'>
                   <img src={Pyrforos} className='pyrforos' />
@@ -35,7 +47,7 @@ const Hero = () => {
             </div> 
 
 
-          {(window.innerHeight < 700 && window.innerWidth < 980) ? null : <FancyBorder />}
+          {(height < 700 && width < 980) ? null : <FancyBorder />}
 
         </div>        
 

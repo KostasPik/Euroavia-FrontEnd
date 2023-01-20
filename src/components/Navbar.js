@@ -68,7 +68,7 @@ const Navbarmenu = () => {
 
                 {/* Add Logo  */}
                 <div className="header__middle__logo">
-                    <NavLink exact activeClassName='is-active' to="/">
+                    <NavLink exact activeClassName='is-active' to={`/?lang=${lang}`}>
                         <img src={logo} alt="logo" className='navbar-logo' /> 
                     </NavLink>
                 </div>
@@ -94,10 +94,10 @@ const Navbarmenu = () => {
                     <ul className={boxClass.join(' ')}>
                     
                     <li  className="menu-item" >
-                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}>{lang == 'el'? 'Αρχική' : 'Home'}</NavLink> 
+                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/?lang=${lang}`}>{lang == 'el'? 'Αρχική' : 'Home'}</NavLink> 
                     </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/teams`}>{lang == 'el'? 'Ομάδες' : 'Teams'}</NavLink> </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/news`}>{lang == 'el'? 'Ανακοινώσεις' : 'Announcements'}</NavLink> </li>
+                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/teams?lang=${lang}`}>{lang == 'el'? 'Ομάδες' : 'Teams'}</NavLink> </li>
+                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/news?lang=${lang}`}>{lang == 'el'? 'Ανακοινώσεις' : 'Announcements'}</NavLink> </li>
                     <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#">{lang == 'el'? 'Δραστηριότητες' : 'Projects'}    
                     {/* <i class="fa-solid fa-chevron-down"></i>  */}
                         <img src={ChevronDown} alt='Chevron Down' width="16" height="16"/>
@@ -105,7 +105,7 @@ const Navbarmenu = () => {
                         <ul className={boxClassSubMenu.join(' ')} >
                             {EVENTS.map((event) => {
                                 // return <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`event/${event[lang]}/`}>{event.name}</NavLink></li>
-                                 return <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/event/${event.slug}/`}>{event.name}</NavLink></li>
+                                 return <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/event/${event.slug}?lang=${lang}`}>{event.name}</NavLink></li>
 
                             }) }
                             {/* <li><NavLink onClick={toggleClass} activeClassName='is-active'  to={`/acc`}>Air Cargo Challenge</NavLink> </li>

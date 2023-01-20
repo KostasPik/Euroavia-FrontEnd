@@ -8,7 +8,8 @@ import LangContext from '../context/LangContext'
 import { Helmet } from 'react-helmet-async'
 export default function New() {
 
-    const {postSlug} = useParams();
+ 
+  const {postSlug} = useParams();
     const {lang} = useContext(LangContext);
     const [post, setPost] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -24,8 +25,7 @@ export default function New() {
           __html: storyblokHTML,
         }
       }
-
-    useEffect( () => {
+      useEffect( () => {
         fetchPost();
     }, [])
 
@@ -33,23 +33,26 @@ export default function New() {
         window.scroll(0,0)
     }, [])
 
-
+    function decodeHtml(html) {
+      var txt = document.createElement("textarea");
+      txt.innerHTML = html.replace( /(<([^>]+)>)/ig, '').replace(/\r?\n|\r/g, '');
+      return txt.value.slice(0,500);
+  }
     if (loading) return <Preloader />
 
   return (
     <>
         <Helmet>
-      
-
-            <meta property="description" content="hello" data-rh="true"/>
+            <meta property="description" content={`${lang === 'el' ? decodeHtml(post?.greek_body)+'...' : decodeHtml(post?.english_body)+'...'}`} data-rh="true"/>
             <meta property="og:type" content="website" />
             <meta property="og:title" content={`${lang === 'el' ? post?.greek_title : post?.english_title} - EUROAVIA Athens`} data-rh="true"/>
-            <meta property="og:description" data-rh="true" content="hello" />
+            <meta property="og:description" data-rh="true" content={`${lang === 'el' ? decodeHtml(post?.greek_body)+'...' : decodeHtml(post?.english_body)+'...'}`} />
             <meta property="og:image" content={`https://euroaviaathens.eu.pythonanywhere.com${post?.thumbnail}`} data-rh="true"/>
             <meta property="og:site_name" content="EUROAVIA Athens" data-rh="true"/>
             <meta property="og:image:alt" content="Euroavia Photo"data-rh="true" />
             <meta name="twitter:card" content="summary_large_image" data-rh="true"/>
             <meta name="twitter:site" content="EUROAVIA Athens" data-rh="true"/>
+            <meta name="twitter:description" data-rh="true"  content={`${lang === 'el' ? decodeHtml(post?.greek_body)+'...' : decodeHtml(post?.english_body)+'...'}`} />
             <meta name="twitter:title" content={`${lang === 'el' ? post?.greek_title : post?.english_title} - EUROAVIA Athens`} data-rh="true"/>
             <meta name="twitter:image" content={`https://euroaviaathens.eu.pythonanywhere.com${post?.thumbnail}`} data-rh="true"/>
             <title>{lang === 'el' ? post?.greek_title : post?.english_title} - EUROAVIA Athens</title>

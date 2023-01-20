@@ -127,7 +127,8 @@ display: none;
 background: #fff;
 /* border: 1px solid lavender; */
 width: 300px;
-left: -100px;
+/* left:-100px; */
+left: -120px;
 padding: 2px 0 0 0;
 z-index: 1000;
 box-shadow: 0 10px 12px rgb(22 33 39 / 25%);

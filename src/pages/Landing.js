@@ -10,7 +10,9 @@ import './Landing.css'
 import axiosInstance from "../api/api"
 import Sponsors from '../components/Sponsors';
 import { Helmet } from "react-helmet-async"
+
 const Landing = () => {
+
 
   const {lang} = useContext(LangContext);
   useEffect (() => {

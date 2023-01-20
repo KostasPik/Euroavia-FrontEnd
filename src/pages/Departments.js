@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Preloader from '../components/Preloader';
 import axiosInstance from '../api/api';
+
 import './Departments.css'
 import LangContext from '../context/LangContext';
 import { Helmet } from 'react-helmet-async';
 
 
 export default function Department() {
-  
+
   const [departments, setDepartments] = useState(null);
   const [loading, setLoading] = useState(true);
   const {lang} = useContext(LangContext);

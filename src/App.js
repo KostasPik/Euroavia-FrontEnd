@@ -24,7 +24,7 @@ function App() {
                 <Route path='/' exact element={<Landing />} />
                 <Route path='/teams/' exact element={<Departments />} />
                 <Route path='/news/' exact element={<News />}/>
-                <Route path='/new/:postSlug/' exact element={<New />}/>
+                <Route path='/news/:postSlug/' exact element={<New />}/>
                 <Route path='/event/:postSlug/' exact element={<Event />} />
               </Routes>
 
