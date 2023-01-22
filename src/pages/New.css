@@ -50,7 +50,58 @@
     font-size: 1.125rem;
     line-height: 1.4rem;
     text-align: justify;
+}
+.new-container .new-content .body h1 {
+    text-align: initial!important;
+    color: #003366!important;
+    padding:0.3rem 0;
+}
+.new-container .new-content .body h2 {
+    text-align: initial!important;
+    color: #003366!important;
+    padding:0.3rem 0;
+}
+.new-container .new-content .body h3 {
+    text-align: initial!important;
+    color: #003366!important;
 
+    padding:0.3rem 0;
+}
+.new-container .new-content .body h4 {
+    text-align: initial!important;
+    padding:0.3rem 0;
+    color: #003366!important;
+}
+.new-container .new-content .body h5 {
+    text-align: initial!important;
+    color: #003366!important;
+    padding:0.3rem 0;
+}
+.new-container .new-content .body h1 span {
+    text-align: initial!important;
+    color: #003366!important;
+    padding:0.3rem 0;
+}
+.new-container .new-content .body h2 span {
+    text-align: initial!important;
+    color: #003366!important;
+    padding:0.3rem 0;
+}
+.new-container .new-content .body h3 span {
+    text-align: initial!important;
+    color: #003366!important;
+
+    padding:0.3rem 0;
+}
+.new-container .new-content .body h4 span {
+    text-align: initial!important;
+    padding:0.3rem 0;
+    color: #003366!important;
+}
+.new-container .new-content .body h5 span {
+    text-align: initial!important;
+    color: #003366!important;
+    padding:0.3rem 0;
 }
 .new-content .body li {
     list-style-type:disc!important;
