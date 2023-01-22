@@ -20,29 +20,29 @@ useEffect( () => {
 }, [])
 
   return (
-    <div class="hero">
-        <div class="bg"></div>
-        <div class={`star-field ${window.innerWidth >900 ? ' animated' : ''}` }>
-        <div class="layer"></div>
-        <div class="layer"></div>
-        <div class="layer"></div>    
+    <div className="hero">
+        <div className="bg"></div>
+        <div className={`star-field ${window.innerWidth >900 ? ' animated' : ''}` }>
+        <div className="layer"></div>
+        <div className="layer"></div>
+        <div clclassNameass="layer"></div>    
         </div>
 
 
-        <div class="context">
-            <div class="text">
-                <small class="welcome">Welcome to</small>
-                <h1 class='title'>EUROAVIA <span className='bg-letters'>Athens</span></h1>
-                <p class='quote'>"They build things... We build wings."</p>
+        <div className="context">
+            <div className="text">
+                <small className="welcome">Welcome to</small>
+                <h1 className='title'>EUROAVIA <span className='bg-letters'>Athens</span></h1>
+                <p className='quote'>"They build things... We build wings."</p>
     
-                <a href="https://forms.gle/t1SnCWLEA2WnaPyt6" target="_blank" className="join-us">Join Us<img src={Rocket} alt='rocket' /></a>
+                <a href="https://forms.gle/t1SnCWLEA2WnaPyt6" target="_blank" rel="noopener" className="join-us">Join Us<img src={Rocket} alt='rocket' /></a>
 
                 <div className='pyrforos-wrapper'>
-                  <img src={Pyrforos} className='pyrforos' />
+                  <img src={Pyrforos} className='pyrforos' alt='N.T.U.A. Logo' />
 
                   <h3>National Technical University of Athens</h3>
 
-                  <img src={GreekFlag} className='greek-flag' />
+                  <img src={GreekFlag} className='greek-flag' alt='Greek Flag' />
                 </div>
             </div> 
 

@@ -127,10 +127,11 @@
     border-radius: 4px;
     /* margin-right: 10px; */
 }
-/* .hero .context .text h1 span.bg-letters {
-    background:url(../images/greek-flag.svg);
-    background-size: contain;
-    background-position: 0% 20%;
+/* .hero .context .text h1  {
+    background:url(../images/landingPage/greekflag3-1.webp);
+    background-size: cover;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 

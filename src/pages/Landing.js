@@ -48,10 +48,10 @@ const Landing = () => {
     <Hero />
     <Metrics />
 
-    <section class="section who-we-are">
+    <section className="section who-we-are">
 
-        <h3 class='title'>{whoWeAre[lang].header}</h3>
-        <div class="text" dangerouslySetInnerHTML={{__html: whoWeAre[lang].body }}>
+        <h3 className='title'>{whoWeAre[lang].header}</h3>
+        <div className="text" dangerouslySetInnerHTML={{__html: whoWeAre[lang].body }}>
         </div>
     </section>
 

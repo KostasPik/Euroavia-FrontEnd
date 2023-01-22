@@ -22,8 +22,8 @@ export default function Footer() {
             <h3>{lang === 'en' ? `Useful Links` : `Χρήσιμοι Σύνδεσμοι`}</h3>
             <ul>
 
-                {FooterContent.usefulLinks[lang].map((usefulLink) => {
-                    return <li><Link to={usefulLink.dest}>{usefulLink.name}</Link></li>
+                {FooterContent.usefulLinks[lang].map((usefulLink, index) => {
+                    return <li key={index}><Link to={usefulLink.dest}>{usefulLink.name}</Link></li>
                 })}
                 
                 {/* <li>News</li>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <img src={Pyrforos} alt='Εθνικό Μετσόβιο Πολυτεχνείο' loading='lazy' />
                 <div className='ntua-caption'>
                     <h4>National Technical University of Athens</h4>
-                    <p class='subtitle'>{lang==='el' ? 'Πολυτεχνειούπολη Ζωγράφου Ηρώων Πολυτεχνείου 9 15772 Ζωγράφου' :
+                    <p className='subtitle'>{lang==='el' ? 'Πολυτεχνειούπολη Ζωγράφου Ηρώων Πολυτεχνείου 9 15772 Ζωγράφου' :
                     'Polytechnioupoli Zografou Iroon Polytechniou 9 15772 Zografou'}</p>
                 </div>
             </div>

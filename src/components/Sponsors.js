@@ -18,46 +18,44 @@ export default function Sponsors2() {
 
     const {lang} = useContext(LangContext);
   return (
-    <section class='section sponsors'>
-        <h3 class='title'>{lang === 'en'? "Sponsors" : "Χορηγοί"}</h3>
-        <div class="text">
+    <section className='section sponsors'>
+        <h3 className='title'>{lang === 'en'? "Sponsors" : "Χορηγοί"}</h3>
+        <div className="text">
             <p>{lang==='en'?"We deeply thank all of our sponsors for continuously supporting our team!" : "Ευχαριστούμε βαθύτατα όλους τους χορηγούς μας που μας στηρίζουν αδιάκοπα!"}</p>
             <div className='sponsors-wrapper'>
                 <div className='sponsor-card hai'>
-                    <img src={HaiImage} loading='lazy'/>
+                    <img src={HaiImage} loading='lazy' alt='Hellenic Aerospace Industry'/>
                 </div>
                 <div className='sponsor-card wurth'>
-                    <img src={WurthImage} loading='lazy'/>
-
-
+                    <img src={WurthImage} loading='lazy' alt='Wurth Sponsor'/>
                 </div>
                 <div className='sponsor-card beta'>
-                    <img src={BetaImage} loading='lazy' />
+                    <img src={BetaImage} loading='lazy' alt='Beta Sponsor' />
 
                 </div>
 
                 <div className='sponsor-card pitsirikos'>
-                    <img src={PitsirikosImage} loading='lazy'/>
+                    <img src={PitsirikosImage} loading='lazy' alt='Pitsirikos Sponsor' />
                 </div>
 
                 <div className='sponsor-card pyrforos'>
-                    <img src={PyrforosImage} loading='lazy'/>
+                    <img src={PyrforosImage} loading='lazy' alt='Ntua Sponsor' />
                 </div>
 
                 <div className='sponsor-card efood'>
-                    <img src={EfoodImage} loading='lazy'/>
+                    <img src={EfoodImage} loading='lazy' alt='Efood Sponsor'/>
                 </div>
 
                 <div className='sponsor-card bestrcshops'>
-                    <img src={BestRcShopsImage} loading='lazy'/>
+                    <img src={BestRcShopsImage} loading='lazy' alt='Beta Sponsor'/>
                 </div>
 
                 <div className='sponsor-card hellenic-drones'>
-                    <img src={HellenicDronesImage} loading='lazy'/>
+                    <img src={HellenicDronesImage} loading='lazy' alt='Hellenic Drones Sponsor'/>
                 </div>
 
                 <div className='sponsor-card bb-accounting'>
-                    <img src={BbAccountingImage} loading='lazy'/>
+                    <img src={BbAccountingImage} loading='lazy' alt='BB Accounting Sponsor'/>
                 </div>
 
 

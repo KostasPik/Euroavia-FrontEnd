@@ -1,7 +1,5 @@
 import React, {useState, useEffect, useContext} from 'react'
 import NewsCard from '../components/NewsCard'
-import SearchBar from '../components/SearchBar'
-import EventsImage from '../images/animated-bg.png'
 import axiosInstance  from '../api/api'
 import LangContext from '../context/LangContext'
 import Preloader from '../components/Preloader'
@@ -74,7 +72,7 @@ export default function News() {
 
 
   </Helmet>
-    <div class='news'>
+    <div className='news'>
         <div className='cool-title'>
             <h1>{announcements[lang].header}</h1>
         </div>

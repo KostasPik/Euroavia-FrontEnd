@@ -124,3 +124,19 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width:532px) {
+    .footer {
+        justify-content: flex-start;
+    }
+    .footer .col {
+        margin-left: 2rem!important;
+    }
+    .footer .col.col3 {
+        justify-content: flex-start;
+     }
+     .footer .col.col3 .ntua {
+
+        justify-content: flex-start;
+    }
+}

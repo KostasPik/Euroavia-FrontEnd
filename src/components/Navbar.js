@@ -69,7 +69,7 @@ const Navbarmenu = () => {
                 {/* Add Logo  */}
                 <div className="header__middle__logo">
                     <NavLink exact activeClassName='is-active' to={`/?lang=${lang}`}>
-                        <img src={logo} alt="logo" className='navbar-logo' /> 
+                        <img src={logo} alt="EUROAVIA Athens" className='navbar-logo' /> 
                     </NavLink>
                 </div>
 
@@ -103,9 +103,9 @@ const Navbarmenu = () => {
                         <img src={ChevronDown} alt='Chevron Down' width="16" height="16"/>
                     </Link>
                         <ul className={boxClassSubMenu.join(' ')} >
-                            {EVENTS.map((event) => {
+                            {EVENTS.map((event, index) => {
                                 // return <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`event/${event[lang]}/`}>{event.name}</NavLink></li>
-                                 return <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/event/${event.slug}?lang=${lang}`}>{event.name}</NavLink></li>
+                                 return <li key={index}><NavLink onClick={toggleClass} activeClassName='is-active' to={`/event/${event.slug}?lang=${lang}`}>{event.name}</NavLink></li>
 
                             }) }
                             {/* <li><NavLink onClick={toggleClass} activeClassName='is-active'  to={`/acc`}>Air Cargo Challenge</NavLink> </li>
@@ -115,15 +115,12 @@ const Navbarmenu = () => {
                     </li>
                     <li className='menu-item flag'>
                         {  lang === 'el' ? 
-                            <Link onClick={() => {toggleClass(); setLanguage('en');}}><img src={americanFlag} style={{width:17}} /></Link>
+                            <Link hrefLang="en" rel="alternate" href="?lang=en"onClick={() => {toggleClass(); setLanguage('en');}}><img src={americanFlag} style={{width:17}} /></Link>
                             :
-                            <Link onClick={() => {toggleClass(); setLanguage('el');}}><img src={greekFlag} style={{width:17}} /></Link>
+                            <Link hrefLang="el" rel="alternate" href="?lang=el"onClick={() => {toggleClass(); setLanguage('el');}}><img src={greekFlag} style={{width:17}} /></Link>
                         }
                     </li>
-
                     </ul>
-
-
                     </nav>     
                 </div>
     </nav>

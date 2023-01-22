@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import LogoWhite from '../images/logo-white.png'
 import PreloaderImage from '../images/preloader-optimized.webp'
 import './Preloader.css'
 
@@ -13,12 +12,12 @@ export default function Preloader() {
   return (
     <div className='preloader-container'>
       <img src={PreloaderImage} alt=''/>
-      <div class="loader">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+      <div className="loader">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
       </div>
     </div>
 
