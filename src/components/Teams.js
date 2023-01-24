@@ -17,7 +17,7 @@ export default function Departments() {
   const {lang} = useContext(LangContext);
   return (
     <section className="section departments">
-        <h3 className="title">Teams</h3>
+        <h3 className="title">{lang==='el'?'Ομάδες' : 'Teams' }</h3>
         <div className="departments">
             <div className="row1-container">
                 <div className="card-box box-down cyan event-organising">

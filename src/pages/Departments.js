@@ -33,14 +33,14 @@ export default function Department() {
     <meta property="og:type" content="website" />
     <meta property="og:title" content={lang==='el'?'Ομάδες':'Teams' - "EUROAVIA Athens"} data-rh="true"/>
     <meta property="og:description" data-rh="true" content="Τι είναι η EUROAVIA; Η EUROAVIA είναι o Ευρωπαϊκός Σύλλογος Φοιτητών Αεροδιαστημικής που ιδρύθηκε το 1959 και έως σήμερα διαθέτει 45 παραρτήματα σε 20 χώρες της Ευρώπης, αριθμώντας πλέον περισσότερα από 2000 μέλη. Πρόκειται για ένα σύλλογο μη πολιτικό και μη κερδοσκοπικό που απαρτίζεται εξ ολοκλήρου από φοιτητές που τρέφουν ενδιαφέρον για την αεροδιαστημική αλλά Read more about Καλωσήρθατε στη EUROAVIA Athens!" />
-    <meta property="og:image" content="http://euroavia.gr/wp-content/uploads/2018/04/euroavia_ath_logo.png" data-rh="true"/>
+    <meta property="og:image" content="https://euroavia.netlify.app/euroavia_ath_logo.png" data-rh="true"/>
     <meta property="og:site_name" content="EUROAVIA Athens" data-rh="true"/>
     <meta property="og:image:alt" content="Euroavia Photo"data-rh="true"/>
     <meta name="twitter:card" content="summary_large_image" data-rh="true"/>
     <meta name="twitter:site" content="EUROAVIA Athens" data-rh="true"/>
     <meta name="twitter:title" content={lang==='el'?'Ομάδες':'Teams' - "EUROAVIA Athens"} data-rh="true"/>
     <meta name="twitter:description" data-rh="true"  content="Τι είναι η EUROAVIA; Η EUROAVIA είναι o Ευρωπαϊκός Σύλλογος Φοιτητών Αεροδιαστημικής που ιδρύθηκε το 1959 και έως σήμερα διαθέτει 45 παραρτήματα σε 20 χώρες της Ευρώπης, αριθμώντας πλέον περισσότερα από 2000 μέλη. Πρόκειται για ένα σύλλογο μη πολιτικό και μη κερδοσκοπικό που απαρτίζεται εξ ολοκλήρου από φοιτητές που τρέφουν ενδιαφέρον για την αεροδιαστημική αλλά Read more about Καλωσήρθατε στη EUROAVIA Athens!" />
-    <meta name="twitter:image" content="http://euroavia.gr/wp-content/uploads/2018/04/euroavia_ath_logo.png"data-rh="true"/>
+    <meta name="twitter:image" content="https://euroavia.netlify.app/euroavia_ath_logo.png"data-rh="true"/>
     <title>{lang==='el'?'Ομάδες':'Teams'} - EUROAVIA Athens</title>
     
     </Helmet>
