@@ -65,7 +65,7 @@ export default function Departments() {
               <div className="row1-container reversed">
                 <div className="card-box box-up cyan it">
                   <h2>IT</h2>
-                  <p>{lang === 'el' ? 'Υποστήριξη των ηλεκτρονικών συστημάτων της ομάδας, αλλά και στην διαχείριση της ιστοσελίδας της.' : 
+                  <p>{lang === 'el' ? 'Υποστήριξη των ηλεκτρονικών συστημάτων της ομάδας, αλλά και διαχείριση της ιστοσελίδας της.' : 
                   "Εnsures the smooth operation of the team's electronic systems, as well as the maintenance of its website."}</p>
                   {/* <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt=""/> */}
                   <img src={ItImage} alt='It Department' loading='lazy' />
