@@ -48,11 +48,11 @@ export default function Department() {
    <div className='departments-container'>
 
         <div className='department-category'>
-          <h1>Marketing</h1>
+          <h1>Technical</h1>
         </div>
         {departments.map((department, index) => {
-          return department.category === 'Marketing' && <div className={`department${index % 2 === 0 ? ' reversed' : ''}`}>
-          <img src={`https://euroaviaathens.eu.pythonanywhere.com${window.innerWidth > 1200 ? department.thumbnail : department.mobile_thumbnail}`} loading={index > 2 ? 'lazy' : null} />
+          return department.category === 'Technical' && <div className={`department${index % 2 === 0 ? ' reversed' : ''}`}>
+          <img src={`https://euroaviaathens.eu.pythonanywhere.com${window.innerWidth > 1200 ? department.thumbnail : department.mobile_thumbnail}`} loading={index > 2 ? 'lazy' : null} alt={`${department?.title}`}/>
             <div className='department-details' id={`${department.slug}`}>
               <h3 className='department-title'>{department?.title}</h3>
               <div className='body' dangerouslySetInnerHTML={lang ==='en' ? {__html:department.english_body} : {__html:department.greek_body}}></div>
@@ -61,11 +61,11 @@ export default function Department() {
         })}
 
         <div className='department-category'>
-          <h1>Technical</h1>
+          <h1>Marketing</h1>
         </div>
         {departments.map((department, index) => {
-          return department.category === 'Technical' && <div className={`department${index % 2 === 0 ? ' reversed' : ''}`}>
-          <img src={`https://euroaviaathens.eu.pythonanywhere.com${department.mobile_thumbnail}`} loading={index > 2 ? 'lazy' : null} />
+          return department.category === 'Marketing' && <div className={`department${index % 2 === 0 ? ' reversed' : ''}`}>
+          <img src={`https://euroaviaathens.eu.pythonanywhere.com${department.mobile_thumbnail}`} loading={index > 2 ? 'lazy' : null} alt={`${department?.title}`}/>
             <div className='department-details' id={`${department.slug}`}>
               <h3 className='department-title'>{department?.title}</h3>
               <div className='body' dangerouslySetInnerHTML={lang ==='en' ? {__html:department.english_body} : {__html:department.greek_body}}></div>
