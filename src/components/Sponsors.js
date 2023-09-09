@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import './Sponsors.css'
 
 import HaiImage from '../images/sponsors/HAI-colored.svg'
-import BetaImage from '../images/sponsors/beta-optimized.svg'
+import AltairImage from '../images/sponsors/altair.svg'
 import WurthImage from '../images/sponsors/wurth.svg'
 import PitsirikosImage from '../images/sponsors/pitsirikos.svg'
 import PyrforosImage from '../images/sponsors/pyrforos.svg'
@@ -10,7 +10,7 @@ import EfoodImage from '../images/sponsors/efood.svg'
 import BestRcShopsImage from '../images/sponsors/best-rc-shops.svg'
 import HellenicDronesImage from '../images/sponsors/hellenic-drones.svg'
 import BbAccountingImage from '../images/sponsors/bbaccounting.svg'
-
+import GlobalImage from '../images/sponsors/global.png'
 import LangContext from '../context/LangContext'
 
 
@@ -29,11 +29,12 @@ export default function Sponsors2() {
                 <div className='sponsor-card wurth'>
                     <img src={WurthImage} loading='lazy' alt='Wurth Sponsor'/>
                 </div>
-                <div className='sponsor-card beta'>
-                    <img src={BetaImage} loading='lazy' alt='Beta Sponsor' />
-
+                <div className='sponsor-card altair'>
+                    <img src={AltairImage} loading='lazy' alt='Altair Sponsor' />
                 </div>
-
+                <div className='sponsor-card global'>
+                        <img src={GlobalImage} loading='lazy' alt='Global Prep'/>
+                </div>
                 <div className='sponsor-card pitsirikos'>
                     <img src={PitsirikosImage} loading='lazy' alt='Pitsirikos Sponsor' />
                 </div>
@@ -47,7 +48,7 @@ export default function Sponsors2() {
                 </div>
 
                 <div className='sponsor-card bestrcshops'>
-                    <img src={BestRcShopsImage} loading='lazy' alt='Beta Sponsor'/>
+                    <img src={BestRcShopsImage} loading='lazy' alt='BestRcShops Sponsor'/>
                 </div>
 
                 <div className='sponsor-card hellenic-drones'>

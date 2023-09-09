@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import New from './pages/New';
 import { LangProvider } from './context/LangContext';
 import Event from './pages/Event';
+import Sponsors from './pages/Sponsors';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/news/'  element={<News />}/>
                 <Route path='/news/:postSlug/'  element={<New />}/>
                 <Route path='/event/:postSlug/' element={<Event />} />
+                <Route path='/sponsors/' element={<Sponsors />} />
               </Routes>
 
               <Footer />

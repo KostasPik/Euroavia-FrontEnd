@@ -9,6 +9,9 @@ const FooterContent = {
         },{
             name:'Announcements',
             dest:'/news',
+        }, {
+            name:'Sponsors',
+            dest:'/sponsors',
         }],
         el: [{
             name: 'Αρχική',
@@ -19,6 +22,9 @@ const FooterContent = {
         },{
             name:'Ανακοινώσεις',
             dest:'/news',
+        }, {
+            name:'Χορηγοί',
+            dest:'/sponsors',
         }],
     }
 }

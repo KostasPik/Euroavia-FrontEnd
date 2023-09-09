@@ -26,8 +26,8 @@
 .sponsor-card.hai {
     border-top: 5px solid #1591cd;
 }
-.sponsor-card.beta {
-    border-top: 5px solid #0d62ad;
+.sponsor-card.altair {
+    border-top: 5px solid #fa4616;
 }
 .sponsor-card.wurth {
     border-top: 5px solid #c00;
@@ -50,7 +50,9 @@
 .sponsor-card.bb-accounting {
     border-top: 5px solid #CAAE6E;
 }
-
+.sponsor-card.global {
+    border-top: 5px solid #027CC7;
+}
 @media screen and (max-width:900px) {
     .sponsor-card {
         width: 250px;

@@ -59,8 +59,8 @@ export default function Footer() {
                 <img src={Pyrforos} alt='Εθνικό Μετσόβιο Πολυτεχνείο' loading='lazy' />
                 <div className='ntua-caption'>
                     <h4>National Technical University of Athens</h4>
-                    <p className='subtitle'>{lang==='el' ? 'Πολυτεχνειούπολη Ζωγράφου Ηρώων Πολυτεχνείου 9 15772 Ζωγράφου' :
-                    'Polytechnioupoli Zografou Iroon Polytechniou 9 15772 Zografou'}</p>
+                    <p className='subtitle'>{lang==='el' ? 'Πολυτεχνειούπολη Ζωγράφου Ηρώων Πολυτεχνείου 9 15780 Ζωγράφου' :
+                    'Polytechnioupoli Zografou Iroon Polytechniou 9 15780 Zografou'}</p>
                 </div>
             </div>
 

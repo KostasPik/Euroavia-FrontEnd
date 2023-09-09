@@ -10,8 +10,14 @@ import './Landing.css'
 import axiosInstance from "../api/api"
 import Sponsors from '../components/Sponsors';
 import { Helmet } from "react-helmet-async"
+import { useLocation } from "react-router-dom"
+
 
 const Landing = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
 
   const {lang} = useContext(LangContext);

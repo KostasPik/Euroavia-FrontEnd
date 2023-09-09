@@ -1,0 +1,14 @@
+.title-with-hr {
+    width: fit-content;
+    position: relative;
+}
+.title-with-hr::before {
+    content:"";
+    width: 50%;
+    height:5px;
+    position: absolute;
+    left: 0;
+    bottom:-3px;
+    background-color: #003366;
+    border-radius: 4px;
+}
