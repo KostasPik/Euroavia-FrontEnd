@@ -1,7 +1,5 @@
-
 .sponsors-wrapper {
     width: 100%;
-    /* padding: 2rem 5rem; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,6 +30,9 @@
 .sponsor-card.wurth {
     border-top: 5px solid #c00;
 }
+.sponsor-card.avek {
+    border-top: 5px solid #212B3D;
+}
 .sponsor-card.pitsirikos {
     border-top: 5px solid #ED262E;
 }
@@ -49,6 +50,9 @@
 }
 .sponsor-card.bb-accounting {
     border-top: 5px solid #CAAE6E;
+}
+.sponsor-card.fibermax {
+    border-top: 5px solid #040048;
 }
 .sponsor-card.global {
     border-top: 5px solid #027CC7;

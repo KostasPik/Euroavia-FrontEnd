@@ -11,9 +11,15 @@ import EfoodImage from '../images/sponsors/efood.svg'
 import BestRcShopsImage from '../images/sponsors/best-rc-shops.svg'
 import HellenicDronesImage from '../images/sponsors/hellenic-drones.svg'
 import BbAccountingImage from '../images/sponsors/bbaccounting.svg'
+import AvekImage from '../images/sponsors/avek.svg'
 import GlobalImage from '../images/sponsors/global.png'
+import FiberMaxImage from '../images/sponsors/fibermax.svg'
+
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+
+
+
 function Sponsors() {
 
     const { pathname } = useLocation();
@@ -63,6 +69,9 @@ function Sponsors() {
                 </div>
                 <div className='sponsor-card altair'>
                         <img src={AltairImage} loading='lazy' alt='Altair'/>
+                </div>
+                <div className='sponsor-card avek'>
+                        <img src={AvekImage} loading='lazy' alt='Avek'/>
                 </div>
             </div>
         </div>
@@ -120,7 +129,13 @@ function Sponsors() {
                     <img src={BbAccountingImage} loading='lazy' alt='BB Accounting'/>
                 </div>
 
+                <div className='sponsor-card fibermax'>
+                    <img src={FiberMaxImage} loading='lazy' alt='Fibermax'/>
+                </div>
+
             </div>
+
+            
         </div>
         
         </div>

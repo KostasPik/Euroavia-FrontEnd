@@ -10,9 +10,10 @@ import EfoodImage from '../images/sponsors/efood.svg'
 import BestRcShopsImage from '../images/sponsors/best-rc-shops.svg'
 import HellenicDronesImage from '../images/sponsors/hellenic-drones.svg'
 import BbAccountingImage from '../images/sponsors/bbaccounting.svg'
+import AvekImage from '../images/sponsors/avek.svg'
 import GlobalImage from '../images/sponsors/global.png'
 import LangContext from '../context/LangContext'
-
+import FibermaxImage from '../images/sponsors/fibermax.svg'
 
 export default function Sponsors2() {
 
@@ -28,6 +29,9 @@ export default function Sponsors2() {
                 </div>
                 <div className='sponsor-card wurth'>
                     <img src={WurthImage} loading='lazy' alt='Wurth Sponsor'/>
+                </div>
+                <div className='sponsor-card avek'>
+                    <img src={AvekImage} loading='lazy' alt='Avek Sponsor'/>
                 </div>
                 <div className='sponsor-card altair'>
                     <img src={AltairImage} loading='lazy' alt='Altair Sponsor' />
@@ -58,7 +62,9 @@ export default function Sponsors2() {
                 <div className='sponsor-card bb-accounting'>
                     <img src={BbAccountingImage} loading='lazy' alt='BB Accounting Sponsor'/>
                 </div>
-
+                <div className='sponsor-card fibermax'>
+                    <img src={FibermaxImage} loading='lazy' alt='Fibermax Sponsor'/>
+                </div>
 
             </div>
        
