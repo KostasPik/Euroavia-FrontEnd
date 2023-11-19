@@ -59,7 +59,8 @@ export default function New() {
       </Helmet>
     <div className='new'>
         <div className='new-container'>
-            <div style={{backgroundImage:`url(https://euroaviaathens.eu.pythonanywhere.com${post?.thumbnail})`}} className='new-image' alt={post?.greek_title} ></div>
+            {/* <div style={{backgroundImage:`url(https://euroaviaathens.eu.pythonanywhere.com${post?.thumbnail})`}} className='new-image' alt={post?.greek_title} ></div> */}
+            <img src={`https://euroaviaathens.eu.pythonanywhere.com${post?.thumbnail}`} className='new-image' alt={post?.greek_title} />
             <div className='new-content'>
                 <h1 className='title'>{lang === 'el' ? post?.greek_title : post?.english_title}</h1>
                 <small className='date'><img src={CalendarImage} alt='calendar' />{new Date(post?.created_at).toLocaleDateString(lang === 'el'?'el-GR':'en', { year: 'numeric', month: 'numeric', day: 'numeric' })}</small>

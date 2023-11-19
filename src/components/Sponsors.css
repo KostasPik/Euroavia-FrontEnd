@@ -57,6 +57,9 @@
 .sponsor-card.global {
     border-top: 5px solid #027CC7;
 }
+.sponsor-card.elval {
+    border-top: 5px solid #77787b;
+}
 @media screen and (max-width:900px) {
     .sponsor-card {
         width: 250px;

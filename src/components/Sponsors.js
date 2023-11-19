@@ -14,7 +14,7 @@ import AvekImage from '../images/sponsors/avek.svg'
 import GlobalImage from '../images/sponsors/global.png'
 import LangContext from '../context/LangContext'
 import FibermaxImage from '../images/sponsors/fibermax.svg'
-
+import ElvalImage from '../images/sponsors/elval.svg'
 export default function Sponsors2() {
 
     const {lang} = useContext(LangContext);
@@ -26,6 +26,9 @@ export default function Sponsors2() {
             <div className='sponsors-wrapper'>
                 <div className='sponsor-card hai'>
                     <img src={HaiImage} loading='lazy' alt='Hellenic Aerospace Industry'/>
+                </div>
+                <div className='sponsor-card elval'>
+                    <img src={ElvalImage} loading='lazy' alt='Elval Sponsor'/>
                 </div>
                 <div className='sponsor-card wurth'>
                     <img src={WurthImage} loading='lazy' alt='Wurth Sponsor'/>

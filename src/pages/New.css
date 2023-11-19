@@ -13,11 +13,14 @@
 }
 .new-image {
     width: 100%;
-    height:470px;
-    background-color: #eee;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: auto;
+    /* height: 100%; */
+    /* height:470px; */
+    /* height: 100%; */
+    /* background-color: #eee; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-position: center; */
     /* background-position-x:0; */
     /* margin: 0 auto; */
     border-radius: 4px;
@@ -154,7 +157,7 @@
         width: 90%;
     }
     .new-image {
-        height:325px;
+        /* height:325px; */
     }
     .new-content .title {
         font-size: 1.5rem;
@@ -172,6 +175,6 @@
 @media screen and (max-height:710px) and (min-width:900px) {
     .new-image {
         width: 100%;
-        height:400px; 
+        /* height:400px;  */
     }
 }
