@@ -60,6 +60,9 @@
 .sponsor-card.elval {
     border-top: 5px solid #77787b;
 }
+.sponsor-card.mantopoulos {
+    border-top: 5px solid #231f20;
+}
 @media screen and (max-width:900px) {
     .sponsor-card {
         width: 250px;

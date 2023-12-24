@@ -15,6 +15,7 @@ import GlobalImage from '../images/sponsors/global.png'
 import LangContext from '../context/LangContext'
 import FibermaxImage from '../images/sponsors/fibermax.svg'
 import ElvalImage from '../images/sponsors/elval.svg'
+import MantopoulosImage from '../images/sponsors/mantopoulos.svg'
 export default function Sponsors2() {
 
     const {lang} = useContext(LangContext);
@@ -67,6 +68,9 @@ export default function Sponsors2() {
                 </div>
                 <div className='sponsor-card fibermax'>
                     <img src={FibermaxImage} loading='lazy' alt='Fibermax Sponsor'/>
+                </div>
+                <div className='sponsor-card mantopoulos'>
+                    <img src={MantopoulosImage} loading='lazy' alt='Mantopoulos Sponsor'/>
                 </div>
 
             </div>

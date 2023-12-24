@@ -95,6 +95,7 @@ position: absolute;
 background-color: #fff;
 align-items: center;
 box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+z-index:1000;
 }
 .header__middle__logo > a > h1 {
 color: #003366;

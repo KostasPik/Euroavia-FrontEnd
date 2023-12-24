@@ -99,6 +99,7 @@ const Navbarmenu = () => {
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/teams?lang=${lang}`}>{lang == 'el'? 'Ομάδες' : 'Teams'}</NavLink> </li>
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/news?lang=${lang}`}>{lang == 'el'? 'Ανακοινώσεις' : 'Announcements'}</NavLink> </li>
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/sponsors?lang=${lang}`}>{lang == 'el'? 'Χορηγοί' : 'Sponsors'}</NavLink> </li>
+                    <li className='menu-item '><NavLink onClick={toggleClass} activeClassName='is-active' to={`/atlas?lang=${lang}`}>ATLAS</NavLink></li>
                     <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#">{lang == 'el'? 'Δραστηριότητες' : 'Projects'}    
                     {/* <i class="fa-solid fa-chevron-down"></i>  */}
                         <img src={ChevronDown} alt='Chevron Down' width="16" height="16"/>

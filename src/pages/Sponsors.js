@@ -15,7 +15,7 @@ import AvekImage from '../images/sponsors/avek.svg'
 import GlobalImage from '../images/sponsors/global.png'
 import FiberMaxImage from '../images/sponsors/fibermax.svg'
 import ElvalImage from '../images/sponsors/elval.svg'
-
+import MantopoulosImage from '../images/sponsors/mantopoulos.svg'
 import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
@@ -113,6 +113,10 @@ function Sponsors() {
 
                 <div className='sponsor-card bestrcshops'>
                     <img src={BestRcShopsImage} loading='lazy' alt='BestRcShops'/>
+                </div>
+
+                <div className='sponsor-card mantopoulos'>
+                    <img src={MantopoulosImage} loading='lazy' alt='Mantopoulos'/>
                 </div>
 
             </div>
